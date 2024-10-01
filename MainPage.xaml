@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="operaciones.MainPage">
+
+    <VerticalStackLayout Padding="30">
+
+        <Label Text="Ingrese el primer número:" FontSize="20"/>
+        <Entry x:Name="Numero1" Placeholder="Número 1" Keyboard="Numeric"/>
+
+        <Label Text="Ingrese el segundo número:" FontSize="20"/>
+        <Entry x:Name="Numero2" Placeholder="Número 2" Keyboard="Numeric"/>
+
+        <Label Text="Seleccione la operación:" FontSize="20"/>
+        <HorizontalStackLayout Spacing="10">
+            <Button Text="Sumar" Clicked="OnSumaClicked"/>
+            <Button Text="Restar" Clicked="OnRestaClicked"/>
+            <Button Text="Multiplicar" Clicked="OnMultiplicaClicked"/>
+            <Button Text="Dividir" Clicked="OnDivideClicked"/>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>
